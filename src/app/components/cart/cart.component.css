@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  text-align: center;
+  min-height: 350px;
+  /* max-height: 350px; */
+  /* margin: 20px; */
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  padding-top: 45px;
+}
+.img-thumbnail {
+  min-height: 195px;
+  max-height: 195px;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  display: block;
+}
+img {
+  vertical-align: middle;
+  text-align: center;
+  border-style: none;
+  margin: auto;
+}
+h5 {
+  display: block;
+  font-size: 1.00rem;
+  font-weight: bold;
+  background: white;
+  white-space: nowrap;
+  font-style: initial;
+  color: black;
+}
+a:link {
+  /* color: green;
+  background-color: transparent; */
+  text-decoration: none;
+}
+

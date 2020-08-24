@@ -1,0 +1,154 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone-x",
+      "price": "$1500",
+      "category": "Mobile",
+      "photo": "./assets/shopping/1.png"
+    },
+    {
+      "id": 2,
+      "name": "OPPO_AS",
+      "price": "$200",
+      "category": "Mobile",
+      "photo": "./assets/shopping/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Black_Berry",
+      "price": "$1000",
+      "category": "Mobile",
+      "photo": "./assets/shopping/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Nokia_A1",
+      "price": "$400",
+      "category": "Mobile",
+      "photo": "./assets/shopping/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "SAMSUMG_Note",
+      "price": "$700",
+      "category": "Mobile",
+      "photo": "./assets/shopping/5.png"
+    },
+    {
+      "id": 6,
+      "name": "Panasonic_TV25M",
+      "price": "$1200",
+      "category": "TV",
+      "photo": "./assets/shopping/6.png"
+    },
+    {
+      "id": 7,
+      "name": "Sony_M007",
+      "price": "$1400",
+      "category": "TV",
+      "photo": "./assets/shopping/7.png"
+    },
+    {
+      "id": 8,
+      "name": "Panasonic_AC200",
+      "price": "$800",
+      "category": "AC",
+      "photo": "./assets/shopping/8.png"
+    },
+    {
+      "id": 9,
+      "name": "Samsung_AC102",
+      "price": "$900",
+      "category": "AC",
+      "photo": "./assets/shopping/9.png"
+    },
+    {
+      "id": 10,
+      "name": "DELL_Laptop_A1005",
+      "price": "$750",
+      "category": "Laptop",
+      "photo": "./assets/shopping/10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Sony_Laptop_l2020",
+      "price": "$900",
+      "category": "Laptop",
+      "photo": "./assets/shopping/11.png"
+    },
+    {
+      "id": 12,
+      "name": "DELL_M2200",
+      "price": "$700",
+      "category": "Computer",
+      "photo": "./assets/shopping/12.png"
+    },
+    {
+      "id": 13,
+      "name": "Assembel_M4508",
+      "price": "$500",
+      "category": "Computer",
+      "photo": "./assets/shopping/13.png"
+    },
+    {
+      "id": 14,
+      "name": "TITAN_Watch",
+      "price": "$300",
+      "category": "Watch",
+      "photo": "./assets/shopping/14.png"
+    },
+    {
+      "id": 15,
+      "name": "FastTrack_Digital",
+      "price": "$500",
+      "category": "Watch",
+      "photo": "./assets/shopping/15.png"
+    },
+    {
+      "id": 16,
+      "name": "BOOS_HeadPhone",
+      "price": "$750",
+      "category": "Headphone",
+      "photo": "./assets/shopping/16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "iPhone_HeadPhone",
+      "price": "$900",
+      "category": "Headphone",
+      "photo": "./assets/shopping/17.png"
+    },
+    {
+      "id": 18,
+      "name": "Mi_HeadPhone",
+      "price": "$450",
+      "category": "Headphone",
+      "photo": "./assets/shopping/18.png"
+    }
+  ],
+  "cartItems":[ {
+
+        "id": 19,
+        "name": "BOSS_M4589",
+        "price": "$650",
+        "category": "Headphone",
+        "photo": "./assets/shopping/19.png"
+
+  }]
+
+}

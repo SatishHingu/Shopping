@@ -1,0 +1,69 @@
+<app-header></app-header>
+<div class="container" *ngIf="cartItems && cartItems.length > 0">
+  <div class="col-sm-3" *ngFor="let item of products, let i=index">
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="container-fliud">
+            <div class="wallpper row">
+              <div class="tab-pane active" id="{{item.id}}">
+                <img src="{{Item.photo}}" class="img-thumbnail" alt="img" />
+                <h3 class="product-name">{{item.name}}</h3>
+                <h2 class="product-titel">{{item.price}}</h2>
+                <h3 class="product-price">{{item.category}}</h3>
+                <button (click)="removeItemFromCart(item.id)" class="btn btn-light"
+                  style="background-color: #007bff;">Remove</button>
+                <button routerLink="/product" class="btn btn-light" style="background-color: #007bff;">Go Back</button>
+              </div>
+              <div class="cart-total">
+                <p><button type="button" class="btn btn-outline-primary btn-sm" (click)="emptyCart()">Empty
+                    Cart</button>
+                </p>
+                <!-- <p class="text-right">
+                  <strong class="d-block">Total:</strong>
+                  <span class="d-block">{{totalAmmount | currency:'INR'}}</span>
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div>
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wallpper row">
+        <div class="tab-pane active" id="{{product.id}}">
+          <img src="{{product.photo}}" class="img-thumbnail" alt="img" />
+          <h3 class="product-name">{{product.name}}</h3>
+          <h2 class="product-titel">{{product.price}}</h2>
+          <h3 class="product-price">{{product.category}}</h3>
+          <button routerLink="/cart" class="btn btn-light" style="background-color: #007bff;">Add Cart</button>
+          <button routerLink="/product" class="btn btn-light" style="background-color: #007bff;">Go Back</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<div class="product-cart" *ngIf="cartItems && cartItems.length > 0">
+  <ul>
+    <li *ngFor="let item of cartItems">
+      <img class="card-img-top" src="{{item.photo}}" alt="Card image cap">
+      {{item.name}}
+      <span>{{item.price  | currency:'INR'}}</span>
+      <button type="button" class="close" aria-label="Remove Item" (click)="removeItemFromCart(item.id)">
+        <span aria-hidden="true">&times;</span>
+      </button>        
+    </li>
+  </ul>
+  <div class="cart-total">
+    <!-- <p><button type="button" class="btn btn-outline-primary btn-sm" (click)="emptyCart()">Empty Cart</button></p> -->
+    <p class="text-right">
+      <strong class="d-block">Total:</strong>
+      <span class="d-block">{{totalAmmount | currency:'INR'}}</span>
+    </p>
+  </div>
+</div>

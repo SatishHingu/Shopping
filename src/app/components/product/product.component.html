@@ -1,0 +1,40 @@
+<app-header></app-header>
+ <div class="container-fluid main-container">
+   <div class="row col-12">
+     <main class="col-12 col-md-12 col-xl-12 py-md-3 pl-md-5 bd-content">
+       <div>
+         <div class="testClass">
+           <div class="form-group col-md-3" id="productListSort">
+             <label for="Sort By">Sort By</label>
+               <select (change)="getSort($event.target.value)" class="form-control" options="" id="productListSortBy">
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="category">Category</option>
+              </select>
+             </div>
+              <div class="row">
+                <div class="col-sm-3" *ngFor="let Product of products; let i = index;">
+                  <div class="card">
+                   <div class="card-body">
+                     <a [routerLink]="['/item']" [queryParams]="{ id: Product.id }">
+                       <div>
+                        <img src="{{Product.photo}}" class="img-thumbnail" alt="img" />
+                          <h5 class="card-title">{{Product.name}}</h5>
+                          <h5 class="Price">{{Product.price}}</h5>
+                        </div>
+                       </a>
+                       <button class="btn btn-sm" [ngClass]="this.isAdded[i] ? 'btn-success' : 'btn-outline-secondary'" type="button"  (click)="addToCart($event, Product.id)">Add to Cart</button>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+     </main>
+   </div>
+ </div>
+ 
+
+
+
+
